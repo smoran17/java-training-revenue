@@ -35,6 +35,7 @@ public class TagTrainingSpringApplication {
 
 	}
 
+	//Task 1
 //	private static void printlogic(){
 //		Patient patient = new Patient("John", 1234, LocalDate.of(1960, 01, 01), Gender.MALE);
 //		Screening screening = new Screening(1000,patient,LocalDate.of(2021,01,01),false);
@@ -43,6 +44,7 @@ public class TagTrainingSpringApplication {
 //		System.out.println(screeningService.isPatientScreening(screening,patient));
 //	}
 
+	//Task 2
 	private static void printlist(){
 		Patient patient = new Patient("John", 1234, LocalDate.of(1960, 01, 01), Gender.MALE);
 		Patient patient2 = new Patient("Mary", 1234, LocalDate.of(1960, 01, 01), Gender.FEMALE);
@@ -60,6 +62,7 @@ public class TagTrainingSpringApplication {
 		screeningList.stream().forEach(x -> System.out.println("Patient: " + x.getPatient().getName() + " has a malignant diagnosis of " + x.isMalignant()));
 	}
 
+	//Task 3
 	private static void printService(){
 		ScreeningDatabase screeningDatabase = new ScreeningDatabase();
 		ScreeningService screeningService = new ScreeningService(screeningDatabase);
@@ -68,6 +71,7 @@ public class TagTrainingSpringApplication {
 			System.out.println("Patient: " + screeningx.getPatient().getName() + " has a malignant diagnosis of " + screeningx.isMalignant());}
 	}
 
+	//Extra task
 	private static void printFindScreening(){
 		ScreeningDatabase screeningDatabase = new ScreeningDatabase();
 		ScreeningService screeningService = new ScreeningService(screeningDatabase);
