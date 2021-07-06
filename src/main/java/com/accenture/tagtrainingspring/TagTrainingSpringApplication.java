@@ -56,6 +56,8 @@ public class TagTrainingSpringApplication {
 		screeningList.add(screening3);
 		for(Screening screeningx: screeningList){
 		System.out.println("Patient: " + screeningx.getPatient().getName() + " has a malignant diagnosis of " + screeningx.isMalignant());}
+
+		screeningList.stream().forEach(x -> System.out.println("Patient: " + x.getPatient().getName() + " has a malignant diagnosis of " + x.isMalignant()));
 	}
 
 	private static void printService(){
