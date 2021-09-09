@@ -15,8 +15,8 @@ public class TagTrainingSpringApplication {
 		SpringApplication.run(TagTrainingSpringApplication.class, args);
 		printWelcomeMessage();
 
-		Patient patient = new Patient("Joe", 1, LocalDate.of(1960,1,1), Gender.MALE);
-		Screening screening = new Screening(1, patient, LocalDate.of(2021,1,1), false);
+		Patient patient = new Patient("John", 2, LocalDate.of(1970,1,1), Gender.MALE);
+		Screening screening = new Screening(2, patient, LocalDate.of(2021,1,2), false);
 
 		System.out.println("Patient: " + screening.getPatient().getName() + " has a malignant diagnosis of " + screening.isResult());
 	}
