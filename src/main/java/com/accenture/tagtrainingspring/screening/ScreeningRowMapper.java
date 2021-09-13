@@ -1,4 +1,4 @@
-/*
+
 package com.accenture.tagtrainingspring.screening;
 
 import org.springframework.jdbc.core.RowMapper;
@@ -50,5 +50,3 @@ public class ScreeningRowMapper implements RowMapper<Screening> {
     }
 
 }
-
- */

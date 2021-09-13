@@ -10,32 +10,10 @@ import java.util.LinkedList;
 public class ScreeningService {
 
     @Autowired
-    ScreeningDatabase screeningDatabase;
-
     public ScreeningService() {}
 
-    public ScreeningService(ScreeningDatabase screeningDatabase) {
-        this.screeningDatabase = screeningDatabase;
-    }
-
     public boolean isScreened(Screening screening, Patient patient) {
-        return screening.getPatient().getId() == patient.getId();
+        return screening.getId() == patient.getId();
     }
 
-    public LinkedList<Screening> getScreeningList() {
-        return screeningDatabase.listScreenings();
-    }
-
-    public Screening findName(String name){
-        Screening match = null;
-        LinkedList<Screening> screenings = getScreeningList();
-        for(Screening screening : screenings) {
-            if (screening.getPatient().getName().equals(name)) {
-                match = screening;
-                break;
-            }
-        }
-        return match;
-
-    }
 }

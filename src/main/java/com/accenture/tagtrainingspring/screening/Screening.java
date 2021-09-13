@@ -1,51 +1,77 @@
 package com.accenture.tagtrainingspring.screening;
 
 import com.accenture.tagtrainingspring.patient.Patient;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 
+@Getter
+@Setter
 public class Screening {
-    private int screeningId;
-    private Patient patient;
-    private LocalDate dateOfScreening;
-    private boolean result;
+    private int id;
 
-    public Screening(int screeningId, Patient patient, LocalDate dateOfScreening, boolean result) {
-        this.screeningId = screeningId;
-        this.patient = patient;
-        this.dateOfScreening = dateOfScreening;
-        this.result = result;
-    }
+    private char diagnosis;
 
-    public int getScreeningId() {
-        return screeningId;
-    }
+    private double radiusMean;
 
-    public void setScreeningId(int screeningId) {
-        this.screeningId = screeningId;
-    }
+    private double textureMean;
 
-    public Patient getPatient() {
-        return patient;
-    }
+    private double perimeterMean;
 
-    public void setPatient(Patient patient) {
-        this.patient = patient;
-    }
+    private double areaMean;
 
-    public LocalDate getDateOfScreening() {
-        return dateOfScreening;
-    }
+    private double smoothnessMean;
 
-    public void setDateOfScreening(LocalDate dateOfScreening) {
-        this.dateOfScreening = dateOfScreening;
-    }
+    private double compactnessMean;
 
-    public boolean isResult() {
-        return result;
-    }
+    private double concavityMean;
 
-    public void setResult(boolean result) {
-        this.result = result;
-    }
+    private double concavePointsMean;
+
+    private double symmetryMean;
+
+    private double fractalDimensionMean;
+
+    private double radiusSe;
+
+    private double textureSe;
+
+    private double perimeterSe;
+
+    private double areaSe;
+
+    private double smoothnessSe;
+
+    private double compactnessSe;
+
+    private double concavitySe;
+
+    private double concavePointsSe;
+
+    private double symmetrySe;
+
+    private double fractalDimensionSe;
+
+    private double radiusWorst;
+
+    private double textureWorst;
+
+    private double perimeterWorst;
+
+    private double areaWorst;
+
+    private double smoothnessWorst;
+
+    private double compactnessWorst;
+
+    private double concavityWorst;
+
+    private double concavePointsWorst;
+
+    private double symmetryWorst;
+
+    private double fractalDimensionWorst;
+
+    private char groupId;
 }
